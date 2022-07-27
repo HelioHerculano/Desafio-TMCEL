@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/vendor/select2/css/select2.min.css">  
+    <link href="assets/vendor/jquery-nice-select/css/nice-select.css" rel="stylesheet">
+      
+
+</head>
+<body>
+
+ 
+  <ul class="nav" style="background-color:#008D6E ;">
+    <div class="container-fluid !direction !spacing">
+      <div class="row ${1| ,row-cols-2,row-cols-3, auto,justify-content-md-center,|}">
+        <div class="col-6">
+        <li class="nav-item pt-2">
+          <p class="nav-link text-decoration-none lead" style="color: #FFCB08;"> Seja Bem-Vindo: <a class="text-decoration-none text-white aria-current="page" href="#">Helio Herculano</a></p>
+        </li>
+      </div>
+      </div>
+    </div>
+  </ul>
+
+    <div class="container">
+        <div class="shadow mt-5 row ${1| ,row-cols-2,row-cols-3, auto,justify-content-md-center,|}">
+            <div class="col-md-6 border border-3 d-flex justify-content-center align-items-center" style="border-color:#008D6E !important">
+                <img class="img-fluid" src="assets/images/logo1.png" alt="">        
+            </div>
+            <div class="col-md-6 text-white " style="background-color:#008D6E ;">
+                <h1 class="mt-2 lead" style="color:#fff ; font-size: xx-large;">Diga nos oque pensas!</h1>
+                <p class="mt-3 lead">A empresa TMCEL tem como uma das principais preocupações satisfação do cliente e motivados por essa preocupação a TMCEL dicidiu criar este espaço para que os seus clientes possam deixar a sua opnião sobre os seus serviços</p>        
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <!--<h1 class="display-5 mb-3 border-3 border-bottom">Canais de atendimentos</h1>-->
+    <h1 class="display-5 text-center after" style="color:#008D6E ;">CANAIS DE ATENDIMENTOS</h1>
+    <p class="lead  text-center" >CLIQUE NO BUTÃO AVALIAR PARA PODER DEIXAR A TUA OPNIÃO</p>
+
+        <div class="row mb-5">
+          
+            <div class="col-md">
+              <div class="card shadow mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4 img-fluid">
+                    <img class="card-img card-img-left px-3 py-3" src="assets/images/call.png" alt="Card image" />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="lead" style="color:#008D6E ;">Linha do cliente</h5>
+                      <p class="card-text">
+
+                      </p>
+
+                      <p class="card-text">
+                        <button  type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" onClick="limpar()">
+                          Avaliar
+                      </button>
+                      </p>
+                      
+                      
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md">
+              <div class="card shadow mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4 img-fluid">
+                    <img class="card-img card-img-left px-3 py-3" src="assets/images/store.png" alt="Card image" />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="lead" style="color:#008D6E ;">Lojas</h5>
+                      <p class="card-text">
+
+                      </p>
+                     
+                      <button  type="button" class="card-text btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#ModalLojas" data-bs-whatever="@mdo" onClick="limpar()">
+                        Avaliar
+                    </button>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md">
+              <div class="card shadow mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4 img-fluid">
+                    <img class="card-img card-img-left px-3 py-3" src="assets/images/social-media.png" alt="Card image" />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="lead" style="color:#008D6E ;">Redes Sociais</h5>
+                      <p class="card-text">
+
+                      </p>
+                      <p class="card-text"><button class="btn btn-outline-warning" > Avaliar </button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="row mb-5">
+            <div class="col-md">
+              <div class="card shadow mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4 img-fluid">
+                    <img class="card-img card-img-left px-3 py-3" src="assets/images/call.png" alt="Card image" />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="lead" style="color:#008D6E ;">Agentes</h5>
+                      <p class="card-text">
+
+                      </p>
+                      <p class="card-text"><button class="btn btn-outline-warning" > Avaliar </button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md">
+              <div class="card shadow mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4 img-fluid">
+                    <img class="card-img card-img-left px-3 py-3" src="assets/images/call.png" alt="Card image" />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="lead" style="color:#008D6E ;">Linha do cliente</h5>
+                      <p class="card-text">
+
+                      </p>
+                      <p class="card-text"><button class="btn btn-outline-warning" > Avaliar </button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md">
+              <div class="card shadow mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4 img-fluid">
+                    <img class="card-img card-img-left px-3 py-3" src="assets/images/call.png" alt="Card image" />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="lead" style="color:#008D6E ;">Linha do cliente</h5>
+                      <p class="card-text">
+
+                      </p>
+                      <p class="card-text"><button class="btn btn-outline-warning" > Avaliar </button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          
+    </div>
+
+    <footer class="bg-dark text-white" style="background-color:#008D6E !important ;">
+      <div class="container py-4">
+          <div class="row">
+              <div class="col-md-6 col-6">
+                  <h4 class="h6">SOBRE A TMCEL</h4>
+                  <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, tempora culpa nostrum, incidunt illum doloremque accusantium, veritatis recusandae voluptatibus fugiat iusto! Non nam iure dolorem debitis, nostrum, eaque voluptate porro.</p>
+              </div>
+              <div class="col-md-4">
+                  <h4 class="h6">DADOS DE CONTACTO</h4>
+                  <ul class="list-unstyled text-white">
+                      <li>Universidadepedagogica@up.com.mz</li>
+                      <li>(+258) 84 20 45 773</li>
+                      <li>De Seg. à sex. das 8h às 21h</li>
+                  </ul>
+              </div>
+              <div class="col-md-2">
+                  <h4 class="h6">REDES SOCIAIS</h4>
+                  <ul class="list-unstyled">
+                      <li><a class="btn btn-outline-warning btn-block btn-sm mb-2" href="" style="max-width: 140px">Facebook</a></li>
+                      <li><a class="btn btn-outline-warning btn-block btn-sm mb-2" href="" style="max-width: 140px">Twiter</a></li>
+                      <li><a class="btn btn-outline-warning btn-block btn-sm mb-2" href="" style="max-width: 140px">Instagram</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  
+      <div class="text-center py-3 " style="background-color: #FFCB08;">
+          <p class="mb-0" style="color:#008D6E ;">TMCEL © 2022. Alguns direitos reservados.</p>
+      </div>
+  </footer>
+
+    
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #008D6E !important;">
+          <h5 class="modal-title lead" id="exampleModalLabel3" style="color:#fff !important;">Avaliar</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+
+
+        </div>
+                      <div class="modal-body">
+                        
+
+
+                        <div class="row">
+
+                            
+                              <div class="col-xl-6 col-lg-6">
+                                <div class="card shadow" style="background-color:rgba(170, 168, 168, 0.1) !important;">
+                           
+                                    <div class="card-body">
+
+                                      <p class="card-text lead" style="color:#008D6E">
+                                        Qual é a sua avaliação com relação a tempo de espera?
+                                      </p>
+
+                                      <h4 class="card-title lead text-white"></h4>
+                                        <div class="basic-form">
+                                          <form>
+                                            <div class="mb-3 mb-0">
+                                              <div class="form-check form-check-success">
+                                                <input class="form-check-input" type="radio" name="Success" id="Success"
+                                                    checked>
+                                                <label class="form-check-label py-1" for="Success">
+                                                    Excelente
+                                                </label>
+                                            </div>
+                                            
+                                            <div class="form-check form-check-success">
+                                              <input class="form-check-input" type="radio" name="Success" id="Success"
+                                                  checked>
+                                              <label class="form-check-label py-1" for="Success">
+                                                  Bom
+                                              </label>
+                                          </div>
+                                          
+
+                                          <div class="form-check form-check-success">
+                                            <input class="form-check-input" type="radio" name="Success" id="Success"
+                                                checked>
+                                            <label class="form-check-label py-1" for="Success">
+                                                Mau
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check form-check-success">
+                                          <input class="form-check-input" type="radio" name="Success" id="Success"
+                                              checked>
+                                          <label class="form-check-label py-1" for="Success">
+                                              Péssimo
+                                          </label>
+                                      </div>
+
+                                            </div>
+                                        </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-xl-6 col-lg-6">
+                              <div class="card shadow" style="background-color:rgba(170, 168, 168, 0.1) !important;">
+                         
+                                  <div class="card-body">
+
+                                    <p class="card-text lead" style="color:#008D6E">
+                                      Este canal de atendimento satisfaz as tuas necessidades?
+                                    </p>
+
+                                    <h4 class="card-title lead text-white"></h4>
+                                      <div class="basic-form">
+                                        <form>
+                                          <div class="mb-3 mb-0">
+                                            <div class="form-check form-check-success">
+                                              <input class="form-check-input" type="radio" name="Success" id="Success"
+                                                  checked>
+                                              <label class="form-check-label py-1" for="Success">
+                                                  Sim
+                                              </label>
+                                          </div>
+                                          
+                                          <div class="form-check form-check-success">
+                                            <input class="form-check-input" type="radio" name="Success" id="Success"
+                                                checked>
+                                            <label class="form-check-label py-1" for="Success">
+                                                Não
+                                            </label>
+                                        </div>
+                                        
+
+                                    
+                                          </div>
+                                      </form>
+                                      </div>
+                                  </div>
+                              </div>
+
+                               
+
+
+                            </div>
+
+                          </div>
+
+                          <div class="row">
+
+                            
+                            <div class="col-xl-6 col-lg-6">
+                              <div class="card shadow" style="background-color:rgba(170, 168, 168, 0.1) !important;">
+                         
+                                  <div class="card-body">
+
+                                    <p class="card-text lead" style="color:#008D6E">
+                                      Qual é a sua nota referente a este canal?
+                                    </p>
+
+                                    <h4 class="card-title lead text-white"></h4>
+                                      <div class="basic-form">
+                                        <form>
+                                          <select class="default-select  form-control wide">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                            <option>9</option>
+                                            <option>10</option>
+                                        </select>
+                                      </form>
+                                      </div>
+                                  </div>
+                              </div>
+
+                              
+
+
+                          </div>
+
+                          <div class="col-xl-6 col-lg-6">
+                            <div class="card shadow" style="background-color:rgba(170, 168, 168, 0.1) !important;">
+                       
+                                <div class="card-body">
+
+                                  <p class="card-text lead" style="color:#008D6E">
+                                    Recomendaria este canal aos outros clientes TMCEL?
+                                  </p>
+
+                                  <h4 class="card-title lead text-white"></h4>
+                                    <div class="basic-form">
+                                      <form>
+                                        <div class="mb-3 mb-0">
+                                          <div class="form-check form-check-success">
+                                            <input class="form-check-input" type="radio" name="Success" id="Success"
+                                                checked>
+                                            <label class="form-check-label py-1" for="Success">
+                                                Sim
+                                            </label>
+                                        </div>
+                                        
+                                        <div class="form-check form-check-success">
+                                          <input class="form-check-input" type="radio" name="Success" id="Success"
+                                              checked>
+                                          <label class="form-check-label py-1" for="Success">
+                                              Não
+                                          </label>
+                                      </div>
+                                      
+
+                                  
+                                        </div>
+                                    </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                             
+
+
+                          </div>
+
+                        </div>
+                          
+                          <!--<div class="row">
+                            <div class="col-xl-12 col-xxl-12">
+                                <div class="card" style="background-color:#FFCB08 !important;">
+                                   
+                                  <div class="card-body custom-ekeditor">
+                                    <p class="card-text lead text-white">
+                                      Gostaria de justificar a tua avaliação?
+                                    </p> 
+                                        <div id="ckeditor"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>-->
+
+                          </div><!-- fim do promeiro modal-->
+
+
+
+
+
+                      
+                          <div class="modal-footer">
+                            <button type="cancel" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="submit" class="btn btn-primary" style="background-color:#008D6E !important;">Avaliar</button>
+                          </div>
+                      
+                        </form>
+                      </div>
+
+                                               
+                </div>
+              </div><!--Fim Modal-->
+
+              <div class="modal fade" id="ModalLojas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header" style="background-color: #008D6E !important;">
+                      <h5 class="modal-title" id="exampleModalLabel3" style="color:#fff !important;">Avaliar Lojas</h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+
+                    <div class="modal-body">
+                     
+                      <div class="row">
+              
+                        <div class="col-xl-12">
+                     
+                          <div class="nav-align-top mb-4">
+                            <ul class="nav nav-pills mb-3 nav-fill" role="tablist">
+                              <li class="nav-item">
+                                <button
+                                  type="button"
+                                  class="nav-link active"
+                                  role="tab"
+                                  data-bs-toggle="tab"
+                                  data-bs-target="#navs-pills-justified-home"
+                                  aria-controls="navs-pills-justified-home"
+                                  aria-selected="true"
+                                >
+                                  <i class="tf-icons bx bx-user"></i> No Geral
+                                  <span class="badge rounded-pill badge-center h-px-20 w-px-20 bg-danger" id="numUser"></span>
+                                </button>
+                              </li>
+                              <li class="nav-item">
+                                <button
+                                  type="button"
+                                  class="nav-link"
+                                  role="tab"
+                                  data-bs-toggle="tab"
+                                  data-bs-target="#navs-pills-justified-profile"
+                                  aria-controls="navs-pills-justified-profile"
+                                  aria-selected="false"
+                                >
+                                <i class="tf-icons bx bx-home"></i> Uma Especifica
+                                </button>
+                              </li>
+                            </ul>
+                            <div class="tab-content">
+                              <div class="tab-pane fade show active" id="navs-pills-justified-home" role="tabpanel">
+                
+                                <div class="row">
+
+                            
+                                  <div class="col-xl-6 col-lg-6">
+                                    <div class="card shadow" style="background-color:rgba(170, 168, 168, 0.1) !important;">
+                               
+                                        <div class="card-body">
+    
+                                          <p class="card-text lead" style="color:#008D6E">
+                                            Qual é a sua avaliação com relação ao atendimento nas lojas TMCEL?
+                                          </p>
+    
+                                          <h4 class="card-title lead text-white"></h4>
+                                            <div class="basic-form">
+                                              <form>
+                                                <div class="mb-3 mb-0">
+                                                  <div class="form-check form-check-success">
+                                                    <input class="form-check-input" type="radio" name="Success" id="Success"
+                                                        checked>
+                                                    <label class="form-check-label py-1" for="Success">
+                                                        Excelente
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-check form-check-success">
+                                                  <input class="form-check-input" type="radio" name="Success" id="Success"
+                                                      checked>
+                                                  <label class="form-check-label py-1" for="Success">
+                                                      Bom
+                                                  </label>
+                                              </div>
+                                              
+    
+                                              <div class="form-check form-check-success">
+                                                <input class="form-check-input" type="radio" name="Success" id="Success"
+                                                    checked>
+                                                <label class="form-check-label py-1" for="Success">
+                                                    Mau
+                                                </label>
+                                            </div>
+    
+                                            <div class="form-check form-check-success">
+                                              <input class="form-check-input" type="radio" name="Success" id="Success"
+                                                  checked>
+                                              <label class="form-check-label py-1" for="Success">
+                                                  Péssimo
+                                              </label>
+                                          </div>
+    
+                                                </div>
+                                            </form>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                </div>
+    
+                                <div class="col-xl-6 col-lg-6">
+                                  <div class="card shadow" style="background-color:rgba(170, 168, 168, 0.1) !important;">
+                             
+                                      <div class="card-body">
+    
+                                        <p class="card-text lead" style="color:#008D6E">
+                                          Este canal de atendimento satisfaz as tuas necessidades?
+                                        </p>
+    
+                                        <h4 class="card-title lead text-white"></h4>
+                                          <div class="basic-form">
+                                            <form>
+                                              <div class="mb-3 mb-0">
+                                                <div class="form-check form-check-success">
+                                                  <input class="form-check-input" type="radio" name="Success" id="Success"
+                                                      checked>
+                                                  <label class="form-check-label py-1" for="Success">
+                                                      Sim
+                                                  </label>
+                                              </div>
+                                              
+                                              <div class="form-check form-check-success">
+                                                <input class="form-check-input" type="radio" name="Success" id="Success"
+                                                    checked>
+                                                <label class="form-check-label py-1" for="Success">
+                                                    Não
+                                                </label>
+                                            </div>
+                                            
+    
+                                        
+                                              </div>
+                                          </form>
+                                          </div>
+                                      </div>
+                                  </div>
+    
+                                   
+    
+    
+                                </div>
+    
+                              </div>
+    
+                              <div class="row">
+    
+                                
+                                <div class="col-xl-6 col-lg-6">
+                                  <div class="card shadow" style="background-color:rgba(170, 168, 168, 0.1) !important;">
+                             
+                                      <div class="card-body">
+    
+                                        <p class="card-text lead" style="color:#008D6E">
+                                          Qual é a sua nota referente a este canal?
+                                        </p>
+    
+                                        <h4 class="card-title lead text-white"></h4>
+                                          <div class="basic-form">
+                                            <form>
+                                              <select class="default-select  form-control wide">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                <option>7</option>
+                                                <option>8</option>
+                                                <option>9</option>
+                                                <option>10</option>
+                                            </select>
+                                          </form>
+                                          </div>
+                                      </div>
+                                  </div>
+    
+                                  
+    
+    
+                              </div>
+    
+                              <div class="col-xl-6 col-lg-6">
+                                <div class="card shadow" style="background-color:rgba(170, 168, 168, 0.1) !important;">
+                           
+                                    <div class="card-body">
+    
+                                      <p class="card-text lead" style="color:#008D6E">
+                                        Recomendaria este canal aos outros clientes TMCEL?
+                                      </p>
+    
+                                      <h4 class="card-title lead text-white"></h4>
+                                        <div class="basic-form">
+                                          <form>
+                                            <div class="mb-3 mb-0">
+                                              <div class="form-check form-check-success">
+                                                <input class="form-check-input" type="radio" name="Success" id="Success"
+                                                    checked>
+                                                <label class="form-check-label py-1" for="Success">
+                                                    Sim
+                                                </label>
+                                            </div>
+                                            
+                                            <div class="form-check form-check-success">
+                                              <input class="form-check-input" type="radio" name="Success" id="Success"
+                                                  checked>
+                                              <label class="form-check-label py-1" for="Success">
+                                                  Não
+                                              </label>
+                                          </div>
+                                          
+    
+                                      
+                                            </div>
+                                        </form>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                 
+    
+    
+                              </div>
+    
+                            </div>
+                              
+                              <!--<div class="row">
+                                <div class="col-xl-12 col-xxl-12">
+                                    <div class="card" style="background-color:#FFCB08 !important;">
+                                       
+                                      <div class="card-body custom-ekeditor">
+                                        <p class="card-text lead text-white">
+                                          Gostaria de justificar a tua avaliação?
+                                        </p> 
+                                            <div id="ckeditor"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>-->
+    
+
+                            <div class="modal-footer">
+                              <button type="cancel" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                              <button type="submit" class="btn btn-primary" style="background-color:#008D6E !important;">Avaliar</button>
+                            </div>
+                        
+                          </form>
+
+                              </div><!-- fim do promeiro modal-->
+                      
+                              <div class="tab-pane fade" id="navs-pills-justified-profile" role="tabpanel">
+                               
+                                <div class="row">
+
+                                  <div class="card shadow" style="background-color:rgba(170, 168, 168, 0.1) !important;">
+                           
+                                    <div class="card-body">
+    
+                                      <p class="card-text lead display-5" style="color:#008D6E">
+                                        Identificar a Loja
+                                      </p>
+    
+                                      <h4 class="card-title lead text-white"></h4>
+                                        <div class="basic-form">
+                                          <form>
+                                            
+                                            
+						<div class="col">
+							<label for="" class="auth-subtitle pb-1 display-5" style="font-size: 20px !important;">Provincia</label>
+							<div class="position-relative has-icon-left">
+								<select class="dropdown-groups form-control form-control-lg" style="border-radius:0 !important;">
+                                    <optgroup label="Região sul">
+                                        <option>Maputo</option>
+                                        <option>Gaza</option>
+                                        <option>Imhabane</option>
+                                    </optgroup>
+                                    <optgroup label="Região Centro">
+                                        <option>Nested option 1</option>
+                                        <option>Nested option 2</option>
+                                        <option>Nested option 3</option>
+                                    </optgroup>
+									<optgroup label="Região Norte">
+                                        <option>Nested option 1</option>
+                                        <option>Nested option 2</option>
+                                        <option>Nested option 3</option>
+                                    </optgroup>
+                                </select>
+								
+							  </div>
+						</div>
+          
+                                          
+                                        </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                  
+                                </div>
+                               
+                                <form> 
+                                <div class="modal-footer">
+                                  <button type="cancel" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                  <button type="submit" class="btn btn-primary" style="background-color:#008D6E !important;">Avaliar</button>
+                                </div>
+                            
+                              </form>
+                              </div>
+                                  
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+        
+        
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="assets/vendor/global/global.min.js"></script>
+    <script src="assets/vendor/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="assets/vendor/select2/js/select2.full.min.js"></script>
+    <script src="assets/js/plugins-init/select2-init.js"></script>
+
+      <script src="js/custom.min.js"></script>
+    <script src="js/dlabnav-init.js"></script>
+
+  
+    <script src="assets/vendor/ckeditor/ckeditor.js"></script>
+    <script src="assets/js/custom.min.js"></script>
+    <script src="assets/js/dlabnav-init.js"></script>
+    <script src="assets/js/demo.js"></script>
+
+
+   
+
+</body>
+</html>

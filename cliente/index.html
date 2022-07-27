@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de control de satisfação do cliénte</title>
+    
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    
+
+    <link rel="stylesheet" href="assets/vendors/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/pages/auth.css">
+
+
+
+	<!-- Daterange picker -->
+    <link href="assets/vendor/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <!-- Clockpicker -->
+    <link href="assets/vendor/clockpicker/css/bootstrap-clockpicker.min.css" rel="stylesheet">
+    <!-- asColorpicker -->
+    <link href="assets/vendor/jquery-asColorPicker/css/asColorPicker.min.css" rel="stylesheet">
+    <!-- Material color picker -->
+    <link href="assets/vendor/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet">
+	
+    <!-- Pick date -->
+    <link rel="stylesheet" href="assets/vendor/pickadate/themes/default.css">
+    <link rel="stylesheet" href="assets/vendor/pickadate/themes/default.date.css">
+	
+
+	<link rel="stylesheet" href="assets/vendor/select2/css/select2.min.css">
+	<link href="assets/vendor/jquery-nice-select/css/nice-select.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div id="auth">
+
+        <div class="row h-100 mt-0">
+            <div class="col-lg-9 col-12">
+                <div id="auth-left">
+                   
+                    <h1 class="auth-title" style="color:#008D6E ;">Bem vindo</h1>
+                    <p class="auth-subtitle mb-3">Antes de avançar diga nos quem és!</p>
+
+                    <form class="form" action="home.html">
+                        
+					<div class="row g-2">
+						<div class="col mb-3">
+							<label for="" class="auth-subtitle pb-1 display-5" style="font-size: 20px !important;">Nome completo</label>
+							<div class="form-group position-relative has-icon-left mb-4">
+								<input type="text" class="form-control form-control-lg" placeholder="Nome">
+								<div class="form-control-icon">
+									<i class="bi bi-person"></i>
+								</div>
+							</div>
+						</div>
+		  
+						<div class="col mb-3">
+							<label for="" class="auth-subtitle pb-1 display-5" style="font-size: 20px !important;">Número</label>
+							<div class="form-group position-relative has-icon-left mb-4">
+								<input type="number" class="form-control form-control-lg" placeholder="+258 82 xxx xxx">
+								<div class="form-control-icon">
+									<i class="bi bi-phone"></i>
+									
+								</div>
+							</div>
+							<!--<div class="position-relative has-icon-left">
+								<select id="largeSelect" class="form-select form-select-lg form-control form-control-xl">
+								  <option>Provincia</option>
+								  <option value="1">One</option>
+								  <option value="2">Two</option>
+								  <option value="3">Three</option>
+								</select>
+								
+							  </div>-->
+						</div>
+					</div>
+
+					<div class="row g-2">
+						<div class="col mb-3">
+							<label for="" class="auth-subtitle pb-1 display-5" style="font-size: 20px !important;">Idade</label>
+							<div class="form-group position-relative has-icon-left mb-4">
+								<input type="number" class="form-control form-control-lg" placeholder="Idade">
+								<div class="form-control-icon">
+									<i class="bi bi-person"></i>
+								</div>
+							</div>
+						</div>
+		  
+						<div class="col">
+							<label for="" class="auth-subtitle pb-1 display-5" style="font-size: 20px !important;">Provincia</label>
+							<div class="position-relative has-icon-left">
+								<select class="dropdown-groups form-control form-control-lg" style="border-radius:0 !important;">
+                                    <optgroup label="Região sul">
+                                        <option>Maputo</option>
+                                        <option>Gaza</option>
+                                        <option>Imhabane</option>
+                                    </optgroup>
+                                    <optgroup label="Região Centro">
+                                        <option>Nested option 1</option>
+                                        <option>Nested option 2</option>
+                                        <option>Nested option 3</option>
+                                    </optgroup>
+									<optgroup label="Região Norte">
+                                        <option>Nested option 1</option>
+                                        <option>Nested option 2</option>
+                                        <option>Nested option 3</option>
+                                    </optgroup>
+                                </select>
+								
+							  </div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-lg-12 col-xxl-12 col-md-6 ">
+							<label for="" class="auth-subtitle pb-1 display-5" style="font-size: 20px !important;">Desde quando usa a TMCEL?</label>
+							<input type="text" class="form-control form-control-lg" placeholder="2017-06-04" id="mdate">
+						</div>
+					</div>
+					
+					<!--<div class="row g-2 d-flex justify-content-center">
+						<p class="lead text-center">Faixa etaria</p>
+						<div class="col-2">
+							
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="flexRadioDefault"
+										id="flexRadioDefault1">
+									<label class="form-check-label" for="flexRadioDefault1">
+										+18
+									</label>
+								</div>
+							</div>
+							<div class="col-2">
+										
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="flexRadioDefault"
+										id="flexRadioDefault2" checked>
+									<label class="form-check-label" for="flexRadioDefault2">
+										-18
+									</label>
+								</div>
+							
+							</div>
+					</div>-->
+					<div class="row">
+						<div class="col-6">
+							<button class="btn btn-warning btn-block btn-md shadow-lg mt-5">Entrar como anonimo</button>
+						</div>
+						<div class="col-6">
+							<button class="btn btn-success btn-block btn-md shadow-lg mt-5">Entrar com dados</button>
+						</div>
+					</div>
+					
+					
+                    </form>
+
+                </div>
+            </div>
+            <div class="col-lg-3 d-none d-lg-block align-middle">
+                <div id="auth-right" class="align-middle d-flex justify-content-center align-items-center" style="background:#008D6E !important">
+                    <img class="img-fluid mx-auto  d-block sticky-top" src="assets/images/logo.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+    <!--<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>-->
+
+
+	<script src="assets/vendor/global/global.min.js"></script>
+	<script src="assets/vendor/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="assets/vendor/select2/js/select2.full.min.js"></script>
+    <script src="assets/js/plugins-init/select2-init.js"></script>
+	<script src="assets/vendor/chart.js/Chart.bundle.min.js"></script>
+
+		<!-- Apex Chart -->
+		<script src="assets/vendor/apexchart/apexchart.js"></script>
+  
+		<!-- Daterangepicker -->
+		<!-- momment js is must -->
+		<script src="assets/vendor/moment/moment.min.js"></script>
+		<script src="assets/vendor/bootstrap-daterangepicker/daterangepicker.js"></script>
+		<!-- clockpicassets/ker -->
+		<script src="assets/vendor/clockpicker/js/bootstrap-clockpicker.min.js"></script>
+		<!-- asColorPassets/icker -->
+		<script src="assets/vendor/jquery-asColor/jquery-asColor.min.js"></script>
+		<script src="assets/vendor/jquery-asGradient/jquery-asGradient.min.js"></script>
+		<script src="assets/vendor/jquery-asColorPicker/js/jquery-asColorPicker.min.js"></script>
+		<!-- Materialassets/ color picker -->
+		<script src="assets/vendor/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+		<!-- pickdateassets/ -->
+		<script src="assets/vendor/pickadate/picker.js"></script>
+		<script src="assets/vendor/pickadate/picker.time.js"></script>
+		<script src="assets/vendor/pickadate/picker.date.js"></script>
+
+	<!-- Daterangepicker -->
+    <script src="assets/js/plugins-init/bs-daterange-picker-init.js"></script>
+    <!-- Clockpicassets/ker init -->
+    <script src="assets/js/plugins-init/clock-picker-init.js"></script>
+    <!-- asColorPassets/icker init -->
+    <script src="assets/js/plugins-init/jquery-asColorPicker.init.js"></script>
+    <!-- Materialassets/ color picker init -->
+    <script src="assets/js/plugins-init/material-date-picker-init.js"></script>
+    <!-- Pickdateassets/ -->
+    <script src="assets/js/plugins-init/pickadate-init.js"></script>
+
+	<script src="assets/vendor/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+
+</body>
+
+</html>
